@@ -7,7 +7,7 @@ cask 'shadowsocksx-ng-r8' do
   name 'ShadowsocksX-NG-R8'
   homepage 'https://github.com/qinyuhang/ShadowsocksX-NG-R/'
 
-  conflicts_with cask: 'shadowsocksx-ng'
+  conflicts_with cask: ['shadowsocksx', 'shadowsocksx-ng']
   depends_on macos: '>= :el_capitan'
 
   app 'ShadowsocksX-NG-R8.app'
