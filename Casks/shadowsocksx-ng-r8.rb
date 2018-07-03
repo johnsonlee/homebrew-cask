@@ -11,6 +11,7 @@ cask 'shadowsocksx-ng-r8' do
                          'shadowsocksx',
                          'shadowsocksx-ng',
                        ]
+
   depends_on macos: '>= :el_capitan'
 
   app 'ShadowsocksX-NG-R8.app'
