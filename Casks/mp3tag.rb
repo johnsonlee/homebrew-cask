@@ -1,10 +1,10 @@
 cask 'mp3tag' do
-  version '2.88a'
-  sha256 '535e337fe5e1021e6c3490bca074102adf08ebc1432b3f77b53815e6f6cfddff'
+  version '2.91'
+  sha256 '5f7e3f6e72695b5dd0b9486a9f2423d821cfcf88ed7aa4dab257d2bd2d7b543a'
 
-  url "http://download.mp3tag.de/mp3tagv#{version.no_dots}-macOS-Wine.zip"
+  url "https://download.mp3tag.de/mp3tagv#{version.no_dots}-macOS-Wine.zip"
   name 'MP3TAG'
-  homepage 'http://www.mp3tag.de/en/'
+  homepage 'https://www.mp3tag.de/en/'
 
   app "mp3tagv#{version.no_dots}-macOS-Wine/Mp3tag.app"
 

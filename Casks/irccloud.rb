@@ -1,6 +1,6 @@
 cask 'irccloud' do
-  version '0.7.1'
-  sha256 'dce30ecc6cb2d769e51326019d2c45eec12524f11ad08f0fdbc0e42800a4e2d5'
+  version '0.8.0'
+  sha256 '452238fa03271adaa1e1fc6df45b1ba55ba94b0bd2888824a568193c94d95bc2'
 
   url "https://github.com/irccloud/irccloud-desktop/releases/download/v#{version}/IRCCloud-#{version}.dmg"
   appcast 'https://github.com/irccloud/irccloud-desktop/releases.atom'

@@ -1,6 +1,6 @@
 cask 'timings' do
-  version '3.2.3'
-  sha256 '284f9633808170fb630ce1a57482a7a580fecc4575933f9671f570e44d587672'
+  version '3.2.7'
+  sha256 '4783920f55445716769be9b91808fe82ad9449e15c0f0c1d102a28892dce4042'
 
   url "https://mediaatelier.com/Timings#{version.major}/Timings_#{version}.zip"
   appcast "https://mediaatelier.com/Timings#{version.major}/feed.php"

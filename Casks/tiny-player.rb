@@ -1,6 +1,6 @@
 cask 'tiny-player' do
-  version '1.2.3'
-  sha256 'a433521c5e469e7ab03a083721162fff0bec9d1282181ca366965d5d0ee98d58'
+  version '1.2.8'
+  sha256 '5ab4296fa2a6f603ddb11746b0e15d87b776c776cee24c6bb1bd1bf9adb1b56b'
 
   url "http://download.catnapgames.com/TinyPlayer-#{version}.zip"
   appcast 'http://download.catnapgames.com/TinyPlayerAppcast.xml'

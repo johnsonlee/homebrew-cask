@@ -1,6 +1,6 @@
 cask 'intellij-idea-ce' do
-  version '2018.1.5,181.5281.24'
-  sha256 '9f999d54ee284c340f798c21b254b0694b000b270e610008bd870033db0c4bf8'
+  version '2018.3.2,183.4886.37'
+  sha256 '380904ec7c59beb8046caf5dc43160621aa9fb902d36f3f72b341f8a5afe3d74'
 
   url "https://download.jetbrains.com/idea/ideaIC-#{version.before_comma}.dmg"
   appcast 'https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release'

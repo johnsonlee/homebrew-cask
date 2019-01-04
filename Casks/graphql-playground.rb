@@ -1,11 +1,11 @@
 cask 'graphql-playground' do
-  version '1.6.1'
-  sha256 '8a78902c05b76426d1a72b07fbf229921e25c9f3d34133004f2af76a80e062c3'
+  version '1.8.5'
+  sha256 'b9551c4f125f366daaac0295681ec955c265413305d675ef58d2a4d6cd732314'
 
-  url "https://github.com/prismagraphql/graphql-playground/releases/download/v#{version}/graphql-playground-electron-#{version}.dmg"
-  appcast 'https://github.com/prismagraphql/graphql-playground/releases.atom'
+  url "https://github.com/prisma/graphql-playground/releases/download/v#{version}/graphql-playground-electron-#{version}.dmg"
+  appcast 'https://github.com/prisma/graphql-playground/releases.atom'
   name 'GraphQL Playground'
-  homepage 'https://github.com/prismagraphql/graphql-playground'
+  homepage 'https://github.com/prisma/graphql-playground'
 
   app 'GraphQL Playground.app'
 end

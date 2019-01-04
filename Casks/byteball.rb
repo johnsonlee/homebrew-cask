@@ -1,6 +1,6 @@
 cask 'byteball' do
-  version '2.3.0'
-  sha256 '155ca1db521d3fc506c8869d633028f8bd10d860f54a00cefe9ef676f07c23ad'
+  version '2.6.0'
+  sha256 'cf73029f39882893829d5e471191059083f8f2d525c29ba2ff3f1eb40671ba95'
 
   # github.com/byteball/byteball was verified as official when first introduced to the cask
   url "https://github.com/byteball/byteball/releases/download/v#{version}/Byteball-osx64.dmg"

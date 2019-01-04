@@ -1,6 +1,4 @@
 cask 'maintenance' do
-  macos_release = MacOS.version.to_s.delete('.')
-
   if MacOS.version == :snow_leopard
     version '1.4.1'
     sha256 '91404f8f60b1950ee2b84e66e9c22bdf23760dacfcfd1bc76110976f1377faae'
@@ -22,12 +20,15 @@ cask 'maintenance' do
   elsif MacOS.version == :sierra
     version '2.3.0'
     sha256 '8fde91742126d10234451a3c973461f5d84c771e52c6ee14aff93f1d66a0dbca'
+  elsif MacOS.version == :high_sierra
+    version '2.4.2'
+    sha256 '94c7a322d4d796afc5e52534f3564a562240d9c0ec0a60de210e68372fef2137'
   else
-    version '2.3.8'
-    sha256 'c192c36e75aaa75f293f2010472853a18db94b92a2c033b41260690b1679bf6b'
+    version '2.4.9'
+    sha256 '1e81ed81379aea46a9530ede078009a56ac65db33deeeb808550bff14556f366'
   end
 
-  url "https://www.titanium-software.fr/download/#{macos_release}/Maintenance.dmg"
+  url "https://www.titanium-software.fr/download/#{MacOS.version.to_s.delete('.')}/Maintenance.dmg"
   appcast 'https://www.titanium-software.fr/en/release_maintenance.html'
   name 'Maintenance'
   homepage 'https://www.titanium-software.fr/en/maintenance.html'
@@ -42,6 +43,7 @@ cask 'maintenance' do
                       :el_capitan,
                       :sierra,
                       :high_sierra,
+                      :mojave,
                     ]
 
   app 'Maintenance.app'

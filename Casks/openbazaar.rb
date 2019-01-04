@@ -1,6 +1,6 @@
 cask 'openbazaar' do
-  version '2.2.0'
-  sha256 '47429680804162612f5733fc67d40087cf97ffa7bcbef0599a9250dde1502c51'
+  version '2.2.5'
+  sha256 'c9a028a571d52b7100b1447073d54a8834dbc219699976b982b4e25f14606496'
 
   # github.com/OpenBazaar/openbazaar-desktop was verified as official when first introduced to the cask
   url "https://github.com/OpenBazaar/openbazaar-desktop/releases/download/v#{version}/OpenBazaar#{version.major}-#{version.major_minor_patch}.dmg"

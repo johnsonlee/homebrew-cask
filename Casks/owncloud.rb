@@ -1,6 +1,6 @@
 cask 'owncloud' do
-  version '2.4.1.9367'
-  sha256 '7f3a88d47cabdecf30681793e16a2f892224fa769d37af0bcd5472b3241b7386'
+  version '2.5.1.10818'
+  sha256 'ebc936a14bd53946c6e75b2f606424c926bfe08b500b9475f97203f26b4eec34'
 
   url "https://download.owncloud.com/desktop/stable/ownCloud-#{version}.pkg"
   appcast 'https://github.com/owncloud/client/releases.atom'
@@ -13,4 +13,14 @@ cask 'owncloud' do
                        'com.ownCloud.client',
                        'com.owncCloud.finderPlugin',
                      ]
+
+  zap trash: [
+               '~/Library/Group Containers/9B5WD74GWJ.com.owncloud.desktopclient',
+               '~/Library/Caches/com.owncloud.desktopclient',
+               '~/Library/Application Scripts/com.owncloud.desktopclient.FinderSyncExt',
+               '~/Library/Containers/com.owncloud.desktopclient.FinderSyncExt',
+               '~/Library/Preferences/com.owncloud.desktopclient.plist',
+               '~/Library/Application Support/ownCloud',
+               '~/Library/Preferences/ownCloud',
+             ]
 end

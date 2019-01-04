@@ -1,6 +1,6 @@
 cask 'exist-db' do
-  version '4.2.1'
-  sha256 '7858b2f926c62a2642bccb126166da945b10f571ebc96fac388b3ad64eaa74b1'
+  version '4.5.0'
+  sha256 'f77717af7e0e3952c27eea2edcf617e389971aa909fa34b2e594a58a2b1880a6'
 
   # bintray.com/artifact/download/existdb was verified as official when first introduced to the cask
   url "https://bintray.com/artifact/download/existdb/releases/eXist-db-#{version}.dmg"
@@ -12,6 +12,6 @@ cask 'exist-db' do
   zap trash: '~/Library/Application Support/org.exist'
 
   caveats do
-    depends_on_java '8'
+    depends_on_java '8+'
   end
 end

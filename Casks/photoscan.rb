@@ -1,6 +1,6 @@
 cask 'photoscan' do
-  version '1.4.2'
-  sha256 '081e8b298690c44752901b7c32e98a045e3e40273dfbb195868d7a5172846053'
+  version '1.4.5'
+  sha256 '14332f10b09dc75ff7c8076042ffa6ef298d9320539e5c7d334542d83c765a44'
 
   url "http://download.agisoft.com/photoscan_#{version.dots_to_underscores}.dmg"
   appcast 'http://www.agisoft.com/downloads/installer/'

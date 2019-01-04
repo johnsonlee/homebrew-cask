@@ -25,16 +25,16 @@ cask 'shuttle' do
 end
 ```
 
-And here is one for `advancedcolors`. Note that it has an unversioned download (the download `url` does not contain the version number, unlike the example above). It also suppresses the checksum with `sha256 :no_check` (necessary since the checksum will change when a new distribution is made available). This combination of `version :latest` and `sha256 :no_check` is currently the preferred mechanism when a versioned download URL is not available.
+And here is one for `advancedcolors`. Note that it has an unversioned download (the download `url` does not contain the version number, unlike the example above). It also suppresses the checksum with `sha256 :no_check` (necessary since the checksum will change when a new distribution is made available). This combination of `version :latest` and `sha256 :no_check` is currently the preferred mechanism when a versioned download URL is not available and the cask does not have an `appcast`.
 
 ```ruby
 cask 'advancedcolors' do
   version :latest
   sha256 :no_check
 
-  url 'http://advancedcolors.com/AdvancedColors.zip'
+  url 'https://advancedcolors.com/AdvancedColors.zip'
   name 'Advanced Colors'
-  homepage 'http://advancedcolors.com/'
+  homepage 'https://advancedcolors.com/'
 
   app 'AdvancedColors.app'
 end
@@ -149,7 +149,12 @@ Example:
 
 ## Testing Your New Cask
 
-Give it a shot with `brew cask install my-new-cask`.
+Give it a shot with:
+
+```bash
+export HOMEBREW_NO_AUTO_UPDATE=1
+brew cask install my-new-cask
+```
 
 Did it install? If something went wrong, `brew cask uninstall my-new-cask` and edit your Cask with `brew cask edit my-new-cask` to fix it.
 
@@ -168,7 +173,7 @@ $ brew cask style Casks/my-new-cask.rb [--fix]
 
 Keep in mind all of these checks will be made when you submit your PR, so by doing them in advance you’re saving everyone a lot of time and trouble.
 
-If your application and Homebrew-Cask do not work well together, feel free to [file an issue](https://github.com/Homebrew/homebrew-cask#reporting-bugs) after checking out open issues.
+If your application and Homebrew Cask do not work well together, feel free to [file an issue](https://github.com/Homebrew/homebrew-cask#reporting-bugs) after checking out open issues.
 
 ## Finding a Home For Your Cask
 
@@ -211,7 +216,7 @@ Before submitting a trial, make sure it can be made into a full working version 
 
 ### Forks and Apps with Conflicting Names
 
-Forks should have the vendor’s name as a prefix on the Cask’s file name and token. For unrelated Apps that share a name, the most popular one (usually the one already present) stays unprefixed. Since this can be subjective, if you disagree with a decision open an issue and make your case to the maintainers.
+Forks should have the vendor’s name as a prefix on the Cask’s file name and token. For unrelated Apps that share a name, the most popular one (usually the one already present) stays unprefixed. Since this can be subjective, if you disagree with a decision, open an issue and make your case to the maintainers.
 
 ### Unofficial, Vendorless, and Walled Builds
 
@@ -265,11 +270,11 @@ For any git project, some good rules for commit messages are:
 * Followed by an empty line,
 * Followed by an explanation of the commit, wrapped to 72 characters.
 
-See [a note about git commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for more.
+See [a note about git commit messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for more.
 
 The first line of a commit message becomes the **title** of a pull request on GitHub, like the subject line of an email. Including the key info in the first line will help us respond faster to your pull.
 
-For Cask commits in the Homebrew-Cask project, we like to include the Application name, version number (or `:latest`), and purpose of the commit in the first line.
+For Cask commits in the Homebrew Cask project, we like to include the Application name, version number (or `:latest`), and purpose of the commit in the first line.
 
 Examples of good, clear commit summaries:
 

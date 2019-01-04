@@ -1,11 +1,11 @@
 cask 'mtmr' do
-  version '0.16.1'
-  sha256 'f26f8ed80d0f72c65e7693c62180bd001e7ce8d9754518da7124ea0bff4a4b03'
+  version '0.19'
+  sha256 '1a43c3c127526f615834fc0b1b1f75a3352e3a55597da504a1b20c6dd80f57f8'
 
-  url "https://github.com/Toxblh/MTMR/releases/download/v#{version}/MTMR.#{version}.dmg"
-  appcast 'https://github.com/Toxblh/MTMR/releases.atom'
+  url "https://mtmr.app/MTMR%20#{version}.dmg"
+  appcast 'https://mtmr.app/appcast.xml'
   name 'My TouchBar. My rules'
-  homepage 'https://github.com/Toxblh/MTMR'
+  homepage 'https://forum.mtmr.app/'
 
   auto_updates true
   depends_on macos: '>= :sierra'

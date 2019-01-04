@@ -1,10 +1,10 @@
 cask 'visual-studio' do
-  version '7.5.3.7'
-  sha256 '901765a3654641a6a8efe4eb5c94e8c1b67a179f67463870f280dfa18e9ffcc2'
+  version '7.7.2.21'
+  sha256 '44b7b2bfc5f0baab38a191ddc5a2575d1dfa689f5e25f668be9693ad5afc4c38'
 
   # dl.xamarin.com/VsMac was verified as official when first introduced to the cask
   url "https://dl.xamarin.com/VsMac/VisualStudioForMac-#{version}.dmg"
-  appcast 'https://xampubdl.blob.core.windows.net/static/installer_assets/v3/vsmac/Mac/Universal/InstallationManifest.xml'
+  appcast 'https://xampubdl.blob.core.windows.net/static/installer_assets/v4/Mac/Universal/InstallationManifest.xml'
   name 'Visual Studio for Mac'
   homepage 'https://www.visualstudio.com/vs/visual-studio-mac/'
 

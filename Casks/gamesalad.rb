@@ -1,8 +1,8 @@
 cask 'gamesalad' do
-  version '1.25.92'
-  sha256 '96850480f00df0ed2f5ec0775d8f676c7c26f2da43868a118bfab7b869aa9994'
+  version '1.25.95'
+  sha256 '34bab595e1d7eb7e249f844fe76a38930d7747403f1772672a25dddd06de5914'
 
-  url "http://releases.gamesalad.com/creator/#{version}/GameSalad-Creator-#{version}.dmg"
+  url "https://releases.gamesalad.com/creator/GameSalad-Creator-#{version}.dmg"
   appcast 'https://gamesalad.com/download/studioUpdates'
   name 'GameSalad'
   homepage 'https://gamesalad.com/'

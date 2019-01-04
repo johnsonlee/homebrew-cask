@@ -1,6 +1,6 @@
 cask 'yed' do
-  version '3.18.1'
-  sha256 'faffb67a46a24576512460a4d5817be98170ba2333c08e22b682e1cd2f3e85a6'
+  version '3.18.2'
+  sha256 '9a6b3522cf68c8eca2e9a56f9e619e797ba97b675b043b8c36445454b86596ad'
 
   url "https://www.yworks.com/resources/yed/demo/yEd-#{version}_with-JRE10.dmg"
   name 'yWorks yEd'

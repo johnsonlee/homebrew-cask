@@ -1,6 +1,6 @@
 cask 'mist' do
-  version '0.10.0'
-  sha256 '7850ca771eb68b9ad6c3413ce21d4bf04beeb481bbb859cda482185ec8855471'
+  version '0.11.1'
+  sha256 '2d18b86667c4daf690cfda327550d428f7efd09b6057b73456a71d2990c7efd1'
 
   url "https://github.com/ethereum/mist/releases/download/v#{version}/Mist-macosx-#{version.dots_to_hyphens}.dmg"
   appcast 'https://github.com/ethereum/mist/releases.atom'

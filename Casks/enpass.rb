@@ -1,9 +1,9 @@
 cask 'enpass' do
-  version '5.6.10'
-  sha256 'ee429ee0a182ed846326aab27b27a2f0fe08997368209f824a5dbdabd1f5663f'
+  version '6.0.1,293'
+  sha256 'f436efa530c71b794c213492de821e9f2c831975abe84bb3a564bc505a08725c'
 
-  # sinew.in was verified as official when first introduced to the cask
-  url "https://dl.sinew.in/mac/setup/Enpass-#{version}.dmg"
+  url "https://dl.enpass.io/stable/mac/app/#{version.after_comma}/Enpass.zip"
+  appcast 'https://dl.sinew.in/mac/package/appcast.xml'
   name 'Enpass'
   homepage 'https://www.enpass.io/'
 

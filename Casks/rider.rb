@@ -1,6 +1,6 @@
 cask 'rider' do
-  version '2018.1.2,181.4952.297'
-  sha256 '41e4e5687648a1f581ff304b0e64a73596fd7c534fb9222408fa7b3ccca974b3'
+  version '2018.3.1,183.5253.26'
+  sha256 '1c1e5ff2e524efb1eb207e96872e90f95f0a83f79f1b176b9273749b0db9db48'
 
   url "https://download.jetbrains.com/rider/JetBrains.Rider-#{version.before_comma}.dmg"
   appcast 'https://data.services.jetbrains.com/products/releases?code=RD&latest=true&type=release'
@@ -9,7 +9,7 @@ cask 'rider' do
 
   auto_updates true
 
-  app "Rider #{version.before_comma}.app"
+  app 'Rider.app'
 
   uninstall_postflight do
     ENV['PATH'].split(File::PATH_SEPARATOR).map { |path| File.join(path, 'rider') }.each { |path| File.delete(path) if File.exist?(path) && File.readlines(path).grep(%r{# see com.intellij.idea.SocketLock for the server side of this interface}).any? }

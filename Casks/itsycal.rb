@@ -12,8 +12,8 @@ cask 'itsycal' do
     # s3.amazonaws.com/itsycal was verified as official when first introduced to the cask
     url "https://s3.amazonaws.com/itsycal/Itsycal-#{version}.zip"
   else
-    version '0.11.10'
-    sha256 'a322333343d40e5f3ea1f1d454c800b11e9614bfe82547672d3bfdf69535bd6e'
+    version '0.11.13'
+    sha256 'cc6a51ebbc8eec4131c4062b3b8a3e5dcff21998ddf2ce30e5e3f449f5c28736'
 
     # s3.amazonaws.com/itsycal was verified as official when first introduced to the cask
     url "https://s3.amazonaws.com/itsycal/Itsycal-#{version}.zip"
@@ -26,4 +26,8 @@ cask 'itsycal' do
   depends_on macos: '>= :mountain_lion'
 
   app 'Itsycal.app'
+
+  uninstall login_item: 'Itsycal'
+
+  zap trash: '~/Library/Preferences/com.mowglii.ItsycalApp.plist'
 end

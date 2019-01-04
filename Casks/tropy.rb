@@ -1,6 +1,6 @@
 cask 'tropy' do
-  version '1.2.0'
-  sha256 '0f72fcf725219a6c09e2354441f80cc9867aef0db5c54dbf83ec6e3fc0cf9565'
+  version '1.3.2'
+  sha256 'f9687c86fdf5954890d97e0384d954b10db06f675da33eba706ef64f61242a8c'
 
   # github.com/tropy/tropy was verified as official when first introduced to the cask
   url "https://github.com/tropy/tropy/releases/download/#{version}/tropy-#{version}.dmg"

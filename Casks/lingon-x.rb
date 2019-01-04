@@ -1,6 +1,6 @@
 cask 'lingon-x' do
-  version '6.3.2'
-  sha256 'b5f60becd9e5afa2ea8f094c4d0e268b5dd16d6727babbe37c4588569a67dbad'
+  version '6.5.5'
+  sha256 '1e4310b2ef3404cf05485b377ee48dc30451fa4bcd1d6a45561c72b51298c354'
 
   url "https://www.peterborgapps.com/downloads/LingonX#{version.major}.zip"
   appcast "https://www.peterborgapps.com/updates/lingonx#{version.major}-appcast.xml"

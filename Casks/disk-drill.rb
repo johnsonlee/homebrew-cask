@@ -1,6 +1,6 @@
 cask 'disk-drill' do
-  version '3.5.890'
-  sha256 'e8bc3e2235aa0f566aa6834f6f10eeae2816dcdc600c910812ac25c611dc7862'
+  version '3.6.918'
+  sha256 'ae054877b0ed099a3f8fe407ece0d189f8d0099ae1e61bad9bd7823fc3bfed6c'
 
   url "https://www.cleverfiles.com/releases/DiskDrill_#{version}.zip"
   appcast 'https://www.cleverfiles.com/releases/auto-update/dd2-newestr.xml'

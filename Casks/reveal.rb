@@ -1,13 +1,13 @@
 cask 'reveal' do
-  version '16'
-  sha256 '17e67e58b0ec8766c06c996a572b53e6b3b2beeb1f823d9d3412de9b6a38ede6'
+  version '20'
+  sha256 '608317de5ff8ac0ff4e43de5cda59b67f83bfe83103422bd5683d00da3fbf911'
 
   url "https://download.revealapp.com/Reveal.app-#{version}.zip"
-  appcast 'https://revealapp.com/download/'
+  appcast 'https://updates.devmate.com/com.ittybittyapps.Reveal2.xml'
   name 'Reveal'
   homepage 'https://revealapp.com/'
 
-  depends_on macos: '>= :sierra'
+  depends_on macos: '>= :high_sierra'
 
   app 'Reveal.app'
 end

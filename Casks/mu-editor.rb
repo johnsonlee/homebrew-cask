@@ -1,9 +1,9 @@
 cask 'mu-editor' do
-  version '1.0.0,16'
-  sha256 'ae10cf856dca285bf53da5284fb77127fddf7773aa05c7c6104708af5fe054a8'
+  version '1.0.0'
+  sha256 '1140ad93023bbaa858d2c48e4c32e9ccaf16b3d2aa77dfe31c1d852a1e9da191'
 
   # github.com/mu-editor/mu was verified as official when first introduced to the cask
-  url "https://github.com/mu-editor/mu/releases/download/v#{version.before_comma}.beta.#{version.after_comma}/mu-editor_beta#{version.after_comma}_osx.dmg"
+  url "https://github.com/mu-editor/mu/releases/download/v#{version}/mu-editor_#{version.major_minor}_osx.dmg"
   appcast 'https://github.com/mu-editor/mu/releases.atom'
   name 'Mu'
   homepage 'https://codewith.mu/'

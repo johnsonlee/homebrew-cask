@@ -1,9 +1,9 @@
 cask 'krita' do
-  version '4.1.0'
-  sha256 '850274b0eb659637a8d6cbb5ea4818d59eea4d94abe5c63ce9cac5d6bf721258'
+  version '4.1.7'
+  sha256 'df3564744764bf39438c128277327d1f04c5d01a34213ab0a63a015646f5ba6c'
 
   # kde.org/stable/krita was verified as official when first introduced to the cask
-  url "http://download.kde.org/stable/krita/#{version}/krita-#{version}.dmg"
+  url "https://download.kde.org/stable/krita/#{version}/krita-#{version}.dmg"
   name 'Krita'
   homepage 'https://krita.org/'
 
